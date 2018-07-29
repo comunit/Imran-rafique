@@ -68,9 +68,20 @@
 @include mediaSm {
   main#home {
     margin-top: 10vh;
+    font-size: 1.3rem;
+    
+    h1 {
+      font-size: 4rem;
+    }
   }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .about-info {
+    ul {
+      padding: 0;
+    }
   }
 }

@@ -155,7 +155,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job1 job1';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -177,6 +177,13 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+  .about-info ul li {
+    display: inline-block;
+    padding: 4px 14px 4px;
+    background: #eaeaea;
+    color: #333;
+    margin: 0 10px 10px 0;
+    border-radius: 12px; }
 
 .projects {
   display: grid;
@@ -184,10 +191,24 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects .work-image {
     padding: 0; }
-  .projects img {
+  .projects .item {
     width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
+    border-radius: 3px;
+    border: 1px #e1e4e8 solid;
+    background-color: #fff;
+    padding: 16px;
+    text-align: left;
+    color: #eece1a;
+    min-height: 188px; }
+    .projects .item h3 {
+      color: #0366d6;
+      font-weight: 600;
+      font-size: 1.1rem; }
+    .projects .item p {
+      color: #586069;
+      margin-bottom: 8px;
+      font-size: 0.8rem; }
+    .projects .item:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
@@ -274,6 +295,11 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home {
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    font-size: 1.3rem; }
+    main#home h1 {
+      font-size: 4rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .about-info ul {
+    padding: 0; } }
