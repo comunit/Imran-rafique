@@ -66,8 +66,11 @@
 
 // smart Phones
 @include mediaSm {
+  main {
+    padding: 1rem;
+  }
+
   main#home {
-    margin-top: 10vh;
     font-size: 1.3rem;
     
     h1 {
