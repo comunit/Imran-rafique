@@ -294,8 +294,9 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 1rem; }
   main#home {
-    margin-top: 10vh;
     font-size: 1.3rem; }
     main#home h1 {
       font-size: 4rem; }
