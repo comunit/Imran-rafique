@@ -1,6 +1,6 @@
 @media screen and (min-width: 50px) and (orientation: landscape) {
   body#bg-img:after {
-    height: 150% !important; } }
+    height: 100% !important; } }
 
 .menu-btn {
   position: absolute;
@@ -110,7 +110,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0%;
       right: 0;
